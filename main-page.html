@@ -9,6 +9,7 @@
         <title>Jerusalem Judaica Center</title>
         <link rel="stylesheet" href="main-page.css">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="images/favicon-removed-background.png">
 
     </head>
 
@@ -40,7 +41,7 @@
                 </div>
                 
                 <div class="icons">
-                    <a href="#"><img src="images/account-icon.png" alt="Account Icon">Account</a>
+                    <a href="account.html"><img src="images/account-icon.png" alt="Account Icon">Account</a>
                     <a href="#"><img src="images/cart-icon.png" alt="Cart Icon">Cart</a>
                 </div>
             </div>
@@ -91,41 +92,98 @@
             <!-- Features Section -->
             <section class="features-section">
                 <div class="features-container">
+
                     <div class="feature-item">
                         <img src="images/gift.png" alt="A Gift Icon">
                         <p>A GIFT FOR ANY OCCASION</p>
                     </div>
+
                     <div class="feature-item">
                         <img src="images/customer-service.png" alt="Customer Service Icon">
                         <p>PREMIUM CUSTOMER SERVICE</p>
                     </div>
+
                     <div class="feature-item">
                         <img src="images/secure-payment.png" alt="Secure Payment Icon">
                         <p>SECURE PAYMENT</p>
                     </div>
+
                     <div class="feature-item">
                         <img src="images/diamond.png" alt="Exclusive Products Icon">
                         <p>EXCLUSIVE PRODUCTS</p>
                     </div>
+
                     <div class="feature-item">
                         <img src="images/israel.png" alt="Produced by Artists Icon">
                         <p>PRODUCED BY ISRAELI BOUTIQUE ARTISTS</p>
                     </div>
+
+                </div>
+            </section>
+
+            <!-- New Arrivals Section -->
+            <section class="new-arrivals-section">
+
+                <div class="new-arrivals-header">
+                    <h2>New Arrivals</h2>
+                    <div class="underline"></div>
+                </div>
+
+                <div class="new-arrivals-container">
+
+                    <!-- Product 1 -->
+                    <a href="product.html" class="product-item">
+                        <img src="images/product-menorah.jpg" alt="Menorah">
+                        <h3>Gold and Silver Menorah</h3>
+                        <p class="price"><span class="current-price">$45.00</span> <span class="original-price">$57.00</span></p>
+                    </a>
+
+                    <!-- Product 2 -->
+                    <a href="#" class="product-item">
+                        <img src="images/product-kippah.jpg" alt="White Kippah">
+                        <h3>White Kippah</h3>
+                        <p class="price"><span class="current-price">$7.85</span> <span class="original-price">$9.00</span></p>
+                    </a>
+
+                    <!-- Product 3 -->
+                    <a href="#" class="product-item">
+                        <img src="images/product-havdalah-set.jpg" alt="Havdalah Set">
+                        <h3>Havdalah Set</h3>
+                        <p class="price"><span class="current-price">$75.00</span></p>
+                    </a>
+
+                    <!-- Product 4 -->
+                    <a href="#" class="product-item">
+                        <img src="images/product-star-of-david.webp" alt="Star of David Necklace">
+                        <h3>Star of David Necklace</h3>
+                        <p class="price"><span class="current-price">$5.80</span></p>
+                    </a>
+
+                    <!-- Product 5 -->
+                    <a href="#" class="product-item">
+                        <img src="images/product-colorful-menorah.jpg" alt="Colorful Menorah">
+                        <h3>Colorful Menorah</h3>
+                        <p class="price"><span class="current-price">$59.00</span></p>
+                    </a>
+
                 </div>
             </section>
 
             <!-- Hot Categories Section -->
             <section class="categories-section">
+
                 <div class="categories-header">
                     <h2>Hot Categories</h2>
                     <div class="underline"></div>
                 </div>
+
                 <div class="categories-container">
+
                     <!-- Category 1: Books -->
                     <div class="category-item">
                         <img src="images/category-books.jpg" alt="Books">
                         <h3>BOOKS</h3>
-                        <button class="btn">View More</button>
+                        <a href="category-page.html"><button class="btn">View More</button></a>
                         <ul>
                             <li>Bible & Tanach</li>
                             <li>Talmud & Mishnah</li>
@@ -133,11 +191,12 @@
                             <li>Artique Leather Collection</li>
                         </ul>
                     </div>
+
                     <!-- Category 2: Holidays -->
                     <div class="category-item">
                         <img src="images/category-hanukkah.jpg" alt="Holidays">
                         <h3>HOLIDAYS</h3>
-                        <button class="btn">View More</button>
+                        <a href="#"><button class="btn">View More</button></a>
                         <ul>
                             <li>High Holiday</li>
                             <li>Chanukah</li>
@@ -145,11 +204,12 @@
                             <li>Passover</li>
                         </ul>
                     </div>
+
                     <!-- Category 3: Judaica -->
                     <div class="category-item">
                         <img src="images/category-judaica.jpg" alt="Judaica">
                         <h3>JUDAICA</h3>
-                        <button class="btn">View More</button>
+                        <a href="#"><button class="btn">View More</button></a>
                         <ul>
                             <li>Menorahs</li>
                             <li>Mezuzahs</li>
@@ -157,11 +217,12 @@
                             <li>Tefillin</li>
                         </ul>
                     </div>
+
                     <!-- Category 4: Jewish Jewelry -->
                     <div class="category-item">
                         <img src="images/category-jewelry.jpg" alt="Jewish Jewelry">
                         <h3>JEWISH JEWELRY</h3>
-                        <button class="btn">View More</button>
+                        <a href="#"><button class="btn">View More</button></a>
                         <ul>
                             <li>Chai Necklaces</li>
                             <li>Star of David Pendants</li>
@@ -169,12 +230,14 @@
                             <li>Earrings</li>
                         </ul>
                     </div>
+
                 </div>
             </section>
 
             <!-- Newsletter Subscription Section -->
             <section class="newsletter-section">
                 <div class="newsletter-container">
+
                     <div class="newsletter-text">
                         <h2><b>DON'T MISS OUT!</b></h2>
                         <p>Subscribe to the <strong>Jerusalem Judaica Center</strong> mailing list to receive updates on new arrivals, special offers, and exclusive discounts.</p>
@@ -184,6 +247,7 @@
                             <a href="https://www.youtube.com" target="_blank"><img src="images/youtube-icon.png" alt="YouTube"> Subscribe</a>
                         </div>
                     </div>
+
                     <div class="newsletter-form">
                         <form action="#" method="post">
                             <input type="email" name="email" placeholder="Your email address" required>
@@ -198,6 +262,7 @@
                             </label>                                                  
                         </form>
                     </div>
+
                 </div>
             </section>
 
@@ -211,7 +276,7 @@
                     <h3>VISIT OUR STORE</h3>
                     <p>Visit our store and discover amazing <strong>Judaica</strong> products at unbeatable prices.</p>
                     <p>21 HaVaad HaLeumi St.<br>Jerusalem, Israel</p>
-                    <p><a href="tel:+972501234567">+972 50 123 4567</a></p>
+                    <p>+972 50 123 4567</p>
                 </div>
         
                 <div class="store-hours">
@@ -244,6 +309,10 @@
             <div class="payment-icons">
                 <img src="images/payment-methods.png" alt="Payment Methods">
             </div>
+
+            <div class="footer-copyright">
+                <p><strong>&copy; 2024 Jerusalem Judaica Center. All rights reserved.</strong></p>
+            </div>            
 
         </footer>
 
