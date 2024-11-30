@@ -256,12 +256,12 @@ body {
 }
 
 .product_page img{
-    padding-top:7%;
+    padding-top:0%;
     padding-left: 10%;
     width: 33%;
     height: auto;
-    max-width: 500px;
     max-height: 600px;
+    max-width: 50 0px;
 }
 
 .product_page{
@@ -278,7 +278,7 @@ body {
 .product_data h3{
     float: left;
     height: 5%;
-    margin-top:1%;
+    margin-top:2.5%;
     padding: 0%;
 }
 
@@ -322,6 +322,7 @@ body {
     font-weight: bold;
     font-size: 250%;
     width: 10%;
+    padding: 4%;
 }
 
 .original-price {
@@ -329,7 +330,7 @@ body {
     color: #999;
     font-size: 200%;
     width: 10%;
-    margin-top: 1%;
+    margin-top: 5%;
 }
 
 .cart{
@@ -356,4 +357,16 @@ body {
     margin-top:35%;
 }
 
-
+@media (max-width: 768px) { /* Adjust for smaller screens */
+    .price {
+        flex-wrap: wrap; /* Allow prices to wrap on smaller screens */
+    }
+    .current-price, .original-price {
+        width: auto; /* Ensure the widths are flexible */
+        margin-right: 10px; /* Add spacing between prices */
+        margin-top: 0; /* Keep the alignment consistent */
+    }
+    .original-price {
+        margin-right: 0; /* Prevent extra spacing on the right for the last item */
+    }
+}
