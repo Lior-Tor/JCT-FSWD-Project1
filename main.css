@@ -29,6 +29,7 @@ body {
 /* Main Header */
 .main-header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
@@ -65,7 +66,6 @@ body {
 .search-bar input {
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px 0 0 5px;
     width: 400px;
     font-size: 1em;
 }
@@ -79,8 +79,6 @@ body {
 .search-bar button img {
     width: 40px;
     height: auto;
-    padding-left: 0%;
-    margin-left: 0%;
 }
 
 .contact-info {
@@ -103,6 +101,7 @@ body {
 /* Navigation Bar */
 .navbar {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     background-color: #f5f5f5;
@@ -157,7 +156,6 @@ body {
     background-image: url('images/main-banner.jpg');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     height: 70vh;
     display: flex;
     justify-content: flex-start;
@@ -167,7 +165,6 @@ body {
     padding: 0 50px;
 }
 
-/* Banner Content */
 .banner-content {
     max-width: 500px;
     margin-left: 30px;
@@ -405,7 +402,6 @@ body {
 }
 
 .category-item .btn {
-    display: inline-block;
     padding: 10px 20px;
     margin-bottom: 20px;
     text-decoration: none;
@@ -436,12 +432,84 @@ body {
 
 
 
-/* Newsletter Section */
+/* Reviews Section */
+.reviews-section {
+    padding-top: 50px;
+    padding-bottom: 60px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.reviews-header h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.reviews-header .underline {
+    width: 60px;
+    height: 4px;
+    background-color: #f39200;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.reviews-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.review-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.review-item:hover {
+    transform: translateY(-5px);
+}
+
+.review-stars {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.review-item h3 {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.review-item p {
+    font-size: 0.9em;
+    color: #555;
+    line-height: 1.4;
+}
+
+.review-author {
+    font-size: 0.9em;
+    font-style: italic;
+    color: #999;
+    margin-top: 10px;
+}
+
+
+
+
+
+/* Footer Section */
 .newsletter-section {
-    padding: 60px 20px;
+    padding: 70px 20px;
     background-color: #50515A;
     color: #fff;
-    padding-bottom: 50px;
 }
 
 .newsletter-container {
@@ -531,7 +599,6 @@ body {
 }
 
 .newsletter-form label span {
-    display: inline-block;
     line-height: 1.5;
 }
 
@@ -540,11 +607,6 @@ body {
     text-decoration: underline;
 }
 
-
-
-
-
-/* Footer Section */
 .footer-section {
     padding: 40px 20px;
     background-color: #f5f5f5;
@@ -552,7 +614,7 @@ body {
 }
 
 .footer-container {
-    padding-top: 20px;
+    padding-top: 40px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -589,7 +651,7 @@ body {
 }
 
 .store-hours table tr:nth-child(odd) {
-    background-color: #eaeaea;
+    background-color: #e6e3e3;
 }
 
 .store-hours table tr:nth-child(even) {
@@ -605,6 +667,62 @@ body {
     width: 100%;
     height: auto;
     max-width: 300px;
+}
+
+.store-map {
+    margin-bottom: 20px;
+}
+
+.store-map iframe {
+    width: 100%;
+    height: 250px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.directions-btn-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.directions-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 1rem;
+    background-color: #f39200;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.directions-btn:hover {
+    background-color: #d17c00;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .store-info, .store-hours, .store-location {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .store-map iframe {
+        width: 100%;
+        height: 200px;
+    }
+
+    .directions-btn {
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+    }
 }
 
 .payment-icons {
@@ -638,4 +756,17 @@ body {
 
 .footer-copyright p {
     margin: 0;
+}
+
+/* Store Location Styling */
+.store-location {
+    text-align: left;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.store-location h3 {
+    font-size: 1.5rem;
+    color: #f39200;
+    margin-bottom: 15px;
 }
