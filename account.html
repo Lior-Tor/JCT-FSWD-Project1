@@ -6,6 +6,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Account</title>
+        <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="account.css">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
         <link rel="icon" type="image/png" href="images/favicon-removed-background.png">
@@ -22,8 +23,8 @@
             <!-- Main Header -->
             <div class="main-header">
                 <div class="logo">
-                    <a href="main-page.html"><img src="images/logo.png" alt="Jerusalem Judaica Center Logo"></a>
-                    <a href="main-page.html"><h1>Jerusalem Judaica Center</h1></a>
+                    <a href="main.html"><img src="images/logo.png" alt="Jerusalem Judaica Center Logo"></a>
+                    <a href="main.html"><h1>Jerusalem Judaica Center</h1></a>
                 </div>
                 
                 <div class="search-bar">
@@ -47,7 +48,7 @@
             <!-- Navigation Bar -->
             <nav class="navbar">
                 <ul>
-                    <li><a href="#">JUDAICA</a></li>
+                    <li><a href="category.html">JUDAICA</a></li>
                     <li><a href="#">JEWISH JEWELRY</a></li>
                     <li><a href="#">HOME DECOR & ART</a></li>
                     <li><a href="#">JEWISH HOLIDAYS AND EVENTS</a></li>
@@ -64,7 +65,37 @@
 
         <!-- Footer Section -->
         <footer class="footer-section">
+            <!-- Newsletter Section -->
+            <div class="newsletter-section">
+                <div class="newsletter-container">
+                    <div class="newsletter-text">
+                        <h2><b>DON'T MISS OUT!</b></h2>
+                        <p>Subscribe to the <strong>Jerusalem Judaica Center</strong> mailing list to receive updates on new arrivals, special offers, and exclusive discounts.</p>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com" target="_blank"><img src="images/facebook-icon.png" alt="Facebook"> Like us</a>
+                            <a href="https://www.instagram.com" target="_blank"><img src="images/instagram-icon.png" alt="Instagram"> Follow us</a>
+                            <a href="https://www.youtube.com" target="_blank"><img src="images/youtube-icon.png" alt="YouTube"> Subscribe</a>
+                        </div>
+                    </div>
 
+                    <div class="newsletter-form">
+                        <form action="#" method="post">
+                            <input type="email" name="email" placeholder="Your email address" required>
+                            <button type="submit">Send</button>
+                            <label class="checkbox-label">
+                                <input type="checkbox" required>
+                                <span>
+                                    I allow you to send me newsletters to my email in accordance with terms in your
+                                    <br>
+                                    <a href="#">Privacy Policy</a>.
+                                </span>
+                            </label>                                                  
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Store Info Section -->
             <div class="footer-container">
                 <div class="store-info">
                     <h3>VISIT OUR STORE</h3>
@@ -94,20 +125,34 @@
                         </tr>
                     </table>
                 </div>
-        
-                <div class="store-map">
-                    <img src="images/store-map.png" alt="Google Map of Jerusalem Judaica Center" title="Google Maps">
-                </div>
+
+                <div class="store-location">
+                    <h3>FIND US</h3>
+                    
+                    <div class="store-map">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345097764!2d144.95373531531824!3d-37.81627944202162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf4c0c0f93f7e2d0!2s21%20HaVaad%20HaLeumi%20St.%2C%20Jerusalem%2C%20Israel!5e0!3m2!1sen!2sil!4v1681234567890!5m2!1sen!2sil"
+                            width="100%" height="300">
+                        </iframe>
+                    </div>
+                    
+                    <div class="directions-btn-container">
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=21+HaVaad+HaLeumi+St,+Jerusalem,+Israel" target="_blank" class="directions-btn">
+                            Get Directions on Google Maps
+                        </a>
+                    </div>
+                </div>                
             </div>
     
+            <!-- Payment Icons Section -->
             <div class="payment-icons">
                 <img src="images/payment-methods.png" alt="Payment Methods">
             </div>
 
+            <!-- Footer Copyright -->
             <div class="footer-copyright">
                 <p><strong>&copy; 2024 Jerusalem Judaica Center. All rights reserved.</strong></p>
             </div>            
-
         </footer>
 
     </body>
