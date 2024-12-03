@@ -22,8 +22,8 @@
             <!-- Main Header -->
             <div class="main-header">
                 <div class="logo">
-                    <a href="main-page.html"><img src="images/logo.png" alt="Jerusalem Judaica Center Logo"></a>
-                    <a href="main-page.html"><h1>Jerusalem Judaica Center</h1></a>
+                    <a href="main.html"><img src="images/logo.png" alt="Jerusalem Judaica Center Logo"></a>
+                    <a href="main.html"><h1>Jerusalem Judaica Center</h1></a>
                 </div>
                 
                 <div class="search-bar">
@@ -59,6 +59,28 @@
         </header>
 
         <main>
+            <div class="container">
+                <h1>My Account</h1>
+                <form class="account-form" action="/update-account" method="POST">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" value="JohnDoe123" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" value="johndoe@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter new password">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Confirm Password</label>
+                        <input type="password" id="password" name="password" placeholder="Confirm Password">
+                    </div>
+                    <button type="submit" class="btn">Update Account</button>
+                </form>
+            </div>
             <br><br><br><br><br><br><br><br><br><br><br><br>
         </main>
 

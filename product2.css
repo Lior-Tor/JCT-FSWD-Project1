@@ -247,7 +247,7 @@ body {
     margin: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
     /* Stack items vertically */
     .product_page {
         flex-direction: column;
@@ -357,7 +357,7 @@ body {
     margin-top:35%;
 }
 
-@media (max-width: 768px) { /* Adjust for smaller screens */
+@media (max-width: 1300px) { /* Adjust for smaller screens */
     .price {
         flex-wrap: wrap; /* Allow prices to wrap on smaller screens */
     }
@@ -369,4 +369,28 @@ body {
     .original-price {
         margin-right: 0; /* Prevent extra spacing on the right for the last item */
     }
+}
+
+h1{
+    font-size: 2em;
+}
+
+h2{
+    font-size: 1.5em;
+}
+
+h3{
+    font-size: 1.17em;
+}
+
+h4{
+    font-size: 1em;
+}
+
+h5{
+    font-size: 0.83em;
+}
+
+h6{
+    font-size: 0.75em;
 }
