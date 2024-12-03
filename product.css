@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* General Reset */
 body {
     margin: 0;
@@ -152,6 +153,8 @@ body {
 
 
 
+=======
+>>>>>>> 5b378c78c0ea39d733c8e818dc381f18084d861a
 /* Main Section */
 .product_page img{
     padding-top:7%;
@@ -252,6 +255,7 @@ body {
 
 .product_data h6.revs{
     margin-top:35%;
+<<<<<<< HEAD
 }
 
 
@@ -400,4 +404,6 @@ h5{
 
 h6{
     font-size: 0.75em;
+=======
+>>>>>>> 5b378c78c0ea39d733c8e818dc381f18084d861a
 }
