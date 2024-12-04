@@ -8,7 +8,6 @@
         <title>Payment</title>
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="payment.css">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
         <link rel="icon" type="image/png" href="images/favicon-removed-background.png">
     </head>
 
@@ -59,8 +58,53 @@
             </nav>
         </header>
 
-        <main>
-            <br><br><br><br><br><br><br><br><br><br><br><br>
+        <main class="payment-main">
+            <!-- Background Video -->
+            <video class="background-video" autoplay muted loop>
+                <source src="media/flakes-star-of-david.mp4" type="video/mp4">
+            </video>
+        
+            <!-- Payment Cart -->
+            <div class="content-wrapper">
+                <section class="cart-section">
+                    <table class="cart-table">
+                        <thead>
+                            <tr>
+                                <th>Products</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="product-info">
+                                    <img src="images/product-menorah.jpg" alt="Silver Menorah">
+                                    <div>
+                                        <p>Silver Menorah</p>
+                                        <a href="#" class="remove-btn">Remove</a>
+                                    </div>
+                                </td>
+                                <td><span class="original-price">$57</span> <span class="current-price">$45</span></td>
+                                <td>
+                                    <input class="quantity-control" type="number" id="quantity" value="1" min="1">
+                                </td>
+                                <td>$45</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+        
+                <!-- Payment Form -->
+                <aside class="cart-totals">
+                    <h3>Cart Totals</h3>
+                    <p><span>Subtotal:</span> <span>$45</span></p>
+                    <p><span>VAT:</span> <span>$11</span></p>
+                    <p class="total"><span>Total:</span> <span>$56</span></p>
+                    <input type="text" placeholder="Coupon code">
+                    <button class="checkout-btn">Proceed to Checkout</button>
+                </aside>
+            </div>
         </main>
 
         <!-- Footer Section -->

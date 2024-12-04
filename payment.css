@@ -1,0 +1,142 @@
+/* Video Background */
+.payment-main {
+    position: relative; /* Background video completing the gaps for smartphones */
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-video {
+    position: absolute; /* Position video behind other elements */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire element */
+    z-index: -1;
+}
+
+.content-wrapper {
+    z-index: 1;
+    width: 100%;
+    max-width: 1100px;
+    display: flex; /* For cart-section and cart-totals */
+    gap: 15px;
+    padding: 20px; /* Adds space around around cart-section and cart-totals */
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Cart Section */
+.cart-section {
+    flex: 2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgb(186, 90, 6);
+}
+
+.cart-table {
+    width: 100%;
+    margin-bottom: 30px; /* Primarly for smartphones */
+}
+
+.cart-table th,
+.cart-table td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #cccbcb;
+}
+
+.cart-table th {
+    font-size: 1em;
+    font-weight: bold;
+    color: #676666;
+}
+
+.product-info {
+    display: flex;
+    gap: 15px;
+}
+
+.product-info img {
+    width: 90px;
+}
+
+.product-info div {
+    display: flex;
+    flex-direction: column;
+}
+
+.remove-btn {
+    color: #d17c00;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.quantity-control {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #cfcccc;
+    border-radius: 5px;
+}
+
+/* Cart Totals */
+.cart-totals {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgb(186, 90, 6);
+}
+
+.cart-totals h3 {
+    font-size: 1.5em;
+    color: #333232;
+}
+
+.cart-totals p {
+    display: flex; /* Just for putting span prices on the right */
+    justify-content: space-between;
+    font-size: 1em;
+}
+
+.cart-totals .total {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.cart-totals input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #dddcdc;
+    border-radius: 5px;
+    box-sizing: border-box; /* For the input to be the same size as the checkout button */
+}
+
+.checkout-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #f39200;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.checkout-btn:hover {
+    background-color: #d17c00;
+}
+
+/* Responsive Design for Smartphones */
+@media screen and (max-width: 768px) {
+    .content-wrapper {
+        margin: 100px auto; /* To see the background video */
+        flex-wrap: wrap;
+    }
+
+    .cart-section, .cart-totals {
+        margin-bottom: 20px; /* Adds space between sections */
+    }
+}
