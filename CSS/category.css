@@ -2,7 +2,7 @@
 .category-intro {
     padding: 40px 20px;
     text-align: center;
-    background: url('images/judaica-banner.jpg');
+    background: url('../images/judaica-banner.jpg');
     background-size: cover; /* Ensure the image covers the entire background */
     background-attachment: fixed; /* Prevent the background from scrolling with the content */
     background-position: center; /* Better visual alignment */
