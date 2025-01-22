@@ -5,10 +5,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Account</title>
-        <link rel="stylesheet" href="CSS/main.css">
-        <link rel="stylesheet" href="CSS/account.css">
-        <link rel="icon" type="image/png" href="images/favicon-removed-background.png">
+        <title>White Kippah</title>
+        <link rel="stylesheet" href="../CSS/main.css">
+        <link rel="stylesheet" href="../CSS/product2.css">
+        <link rel="icon" type="image/png" href="../images/favicon-removed-background.png">
     </head>
 
     <body>
@@ -22,25 +22,25 @@
             <!-- Main Header -->
             <div class="main-header">
                 <div class="logo">
-                    <a href="main.html"><img src="images/logo.png" alt="Jerusalem Judaica Center Logo"></a>
-                    <a href="main.html"><h1>Jerusalem Judaica Center</h1></a>
+                    <a href="../main.html"><img src="../images/logo.png" alt="Jerusalem Judaica Center Logo"></a>
+                    <a href="../main.html"><h1>Jerusalem Judaica Center</h1></a>
                 </div>
                 
                 <div class="search-bar">
                     <input type="text" placeholder="Search for products...">
-                    <button><img src="images/search-icon.png" alt="Search Icon"></button>
+                    <button><img src="../images/search-icon.png" alt="Search Icon"></button>
                 </div>
                 
                 <div class="contact-info">
-                    <img src="images/phone-icon.png" alt="Phone Icon">
+                    <img src="../images/phone-icon.png" alt="Phone Icon">
                     <p>CALL US NOW</p>
                     <br>
                     <p>+972 50 123 4567</p>
                 </div>
                 
                 <div class="icons">
-                    <a href="account.html"><img src="images/account-icon.png" alt="Account Icon">Account</a>
-                    <a href="#"><img src="images/cart-icon.png" alt="Cart Icon">Cart</a>
+                    <a href="account.html"><img src="../images/account-icon.png" alt="Account Icon">Account</a>
+                    <a href="#"><img src="../images/cart-icon.png" alt="Cart Icon">Cart</a>
                 </div>
             </div>
 
@@ -59,30 +59,49 @@
         </header>
 
         <main>
-            
-            <div class="container">
-                <h1>My Account</h1>
-                <form class="account-form" action="/update-account" method="POST">
-                    <div class="form-group">
-                        <label for="username">Username</label>
-                        <input type="text" id="username" name="username" value="JohnDoe123" required>
+            <div class="product_page">
+                <img src="../images/product-kippah.jpg" alt="Kippah">
+                <div class="product_data">
+                    <div class="cart">
+                        <h1>White Kippah</h1>
+                        <button onclick="window.location.href='payment.html'">BUY NOW</button>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" value="johndoe@example.com" required>
+                    <h3>4.9 stars</h3>
+                    <img src="https://img.freepik.com/premium-photo/five-gold-stars-white-background-3d-render_103577-6987.jpg?w=1380">
+                    <h5><a href="#Reviews">138 Reviews</a></h5>
+                    <div class="price">
+                        <div class="current-price">$7.85</div> 
+                        <div class="original-price">$9</div>
                     </div>
-                    <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password" placeholder="Enter new password">
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Confirm Password</label>
-                        <input type="password" id="password" name="password" placeholder="Confirm Password">
-                    </div>
-                    <button type="submit" class="btn">Update Account</button>
-                </form>
+                    <h4>Product info</h4>
+                    <h6>
+                        Embrace tradition with our Classic White Kippah, designed for both comfort and style. 
+                        Perfect for everyday wear or special occasions, this kippah is crafted from high-quality fabric, offering a soft and lightweight feel. 
+                        The timeless white color complements any attire, making it a versatile addition to your wardrobe. 
+                        Whether you're attending a religious service, celebrating a family event, or looking for a simple yet elegant piece for daily use, this kippah provides a polished and respectful look.<br>
+
+                        <br>Features:<br><br>
+                        <list>
+                            <li>Color: Pure White</li><br>
+                            <li>Material: Premium fabric (Cotton/Polyester blend)</li><br>
+                            <li>Size: One size fits most (Adjustable inner band for comfort)</li><br>
+                            <li>Care Instructions: Hand wash or machine wash on gentle cycle, air dry</li><br>                        
+                            <li>Durability: Long-lasting and resistant to wear</li>
+                        </list>
+                    </h6>
+
+                    <h4 id="Reviews">Reviews</h4>
+
+                    <h6>
+                        Anon8974:<br>⭐️⭐️⭐️⭐️⭐️<br>
+                        I bought this white kippah for my son's Bar Mitzvah, and it was absolutely perfect! It’s simple yet elegant and fits comfortably. The material is soft, and it stayed in place all day without any issues. I highly recommend it for anyone looking for a classic and reliable kippah.<br>
+                        <br><br>
+                        Goy123:<br>⭐️⭐️⭐️⭐️⭐️<br>
+                        This kippah exceeded my expectations. It's well-made, lightweight, and the white color looks crisp and clean. The adjustable band ensures a snug fit, and it's comfortable to wear for long periods. I wear it every week to synagogue, and it holds up beautifully after multiple washes. Very pleased with my purchase!<br>
+                        <br><br><br><br>
+                    </h6>
+                </div>
             </div>
-            
         </main>
 
         <!-- Footer Section -->
@@ -94,9 +113,9 @@
                         <h2><b>DON'T MISS OUT!</b></h2>
                         <p>Subscribe to the <strong>Jerusalem Judaica Center</strong> mailing list to receive updates on new arrivals, special offers, and exclusive discounts.</p>
                         <div class="social-links">
-                            <a href="https://www.facebook.com" target="_blank"><img src="images/facebook-icon.png" alt="Facebook"> Like us</a>
-                            <a href="https://www.instagram.com" target="_blank"><img src="images/instagram-icon.png" alt="Instagram"> Follow us</a>
-                            <a href="https://www.youtube.com" target="_blank"><img src="images/youtube-icon.png" alt="YouTube"> Subscribe</a>
+                            <a href="https://www.facebook.com" target="_blank"><img src="../images/facebook-icon.png" alt="Facebook"> Like us</a>
+                            <a href="https://www.instagram.com" target="_blank"><img src="../images/instagram-icon.png" alt="Instagram"> Follow us</a>
+                            <a href="https://www.youtube.com" target="_blank"><img src="../images/youtube-icon.png" alt="YouTube"> Subscribe</a>
                         </div>
                     </div>
 
@@ -168,7 +187,7 @@
     
             <!-- Payment Icons Section -->
             <div class="payment-icons">
-                <img src="images/payment-methods.png" alt="Payment Methods">
+                <img src="../images/payment-methods.png" alt="Payment Methods">
             </div>
 
             <!-- Footer Copyright -->
