@@ -5,5 +5,5 @@
 Project 1 for JCT course of Full Stack Web Development.
 
 Collaborators:
-- Lior Tordjman
-- Gershon Levy
+- [Lior Tordjman](https://github.com/Lior-Tor)
+- [Gershon Levy](https://github.com/gershylevy)
